@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-06-01 09:00:00+0900
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+**HAPhy** was accepted to **ACM MMSys 2026**, and **TaME4D** to **ACM Multimedia 2026**. 🎉
