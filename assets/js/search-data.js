@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Selected research and development projects across haptics, robot AI, and accessibility.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-repositories",
           title: "repositories",
           description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
@@ -410,51 +417,56 @@ ninja.data = [{
           section: "News",},{id: "news-tame4d-was-accepted-to-acm-multimedia-2026-as-co-author",
           title: 'TaME4D was accepted to ACM Multimedia 2026 (as co-author). 🎉',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-signature-field-localization-guide",
+          title: 'Signature-Field Localization Guide',
+          description: "Helping blind users locate where to sign on a document.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/10_signature_guide/";
+            },},{id: "projects-automatic-multimodal-4d-effect-generation",
+          title: 'Automatic Multimodal 4D Effect Generation',
+          description: "Turning ordinary videos into synchronized vibrotactile, thermal, and airflow experiences.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/1_multimodal_4d/";
+            },},{id: "projects-direct-haptic-rendering-of-gaussian-splatting-scenes",
+          title: 'Direct Haptic Rendering of Gaussian Splatting Scenes',
+          description: "Touching and deforming photorealistic 3D scenes without mesh reconstruction.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/2_gs_haptics/";
+            },},{id: "projects-rag-based-automatic-4d-effect-detection-in-films",
+          title: 'RAG-based Automatic 4D Effect Detection in Films',
+          description: "Retrieval-augmented event detection for authoring 4D movie effects.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/3_rag_4d_detection/";
+            },},{id: "projects-automatic-generation-of-haptic-enabled-3d-objects",
+          title: 'Automatic Generation of Haptic-Enabled 3D Objects',
+          description: "Generating 3D objects that carry their own haptic properties.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/4_haptic_3d_objects/";
+            },},{id: "projects-multisensory-authoring-for-immersive-cultural-content",
+          title: 'Multisensory Authoring for Immersive Cultural Content',
+          description: "Context-aware visual, auditory, and tactile interaction authoring.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/5_immersive_authoring/";
+            },},{id: "projects-humanoid-robot-for-packaging-automation",
+          title: 'Humanoid Robot for Packaging Automation',
+          description: "VLA and video world models for a humanoid on a real packaging line.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+              window.location.href = "/projects/6_humanoid_vla/";
+            },},{id: "projects-speech-gesture-recognition-for-rail-robot-control",
+          title: 'Speech–Gesture Recognition for Rail-Robot Control',
+          description: "Intuitive multimodal control of an industrial rail robot.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+              window.location.href = "/projects/7_speech_gesture_robot/";
+            },},{id: "projects-robot-vision-system-automotive-simulation",
+          title: 'Robot Vision System — Automotive Simulation',
+          description: "Computer-vision perception in a car-simulation environment.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/8_robot_vision_auto/";
+            },},{id: "projects-real-time-audio-tactile-chart-accessibility",
+          title: 'Real-time Audio–Tactile Chart Accessibility',
+          description: "Making data charts perceivable to blind and low-vision users.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_audio_tactile_chart/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
