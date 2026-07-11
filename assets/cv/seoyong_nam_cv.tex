@@ -1,0 +1,132 @@
+%==============================================================
+%  Seoyong Nam — Curriculum Vitae
+%  Compile with pdflatex (or xelatex). Portable: uses standard packages only.
+%==============================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1.9cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+% ---- colours ---------------------------------------------------
+\definecolor{accent}{HTML}{1F3A5F}
+\definecolor{muted}{HTML}{555555}
+
+% ---- hyperlinks ------------------------------------------------
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% ---- section styling -------------------------------------------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0em}{}[\vspace{2pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% ---- entry helpers ---------------------------------------------
+% \cvevent{title}{date}{organization}{location}
+\newcommand{\cvevent}[4]{%
+  {\textbf{#1}\hfill{\color{muted}#2}}\\[1pt]
+  {\textit{#3}\hfill{\color{muted}\textit{#4}}}\par\vspace{2pt}}
+
+% publication item with the CV owner's name emphasised
+\newcommand{\me}{\textbf{Nam, S.}}
+
+%==============================================================
+\begin{document}
+
+% ---------------- Header ---------------------------------------
+{\Huge\bfseries Seoyong Nam}\\[4pt]
+{\color{muted}\large Ph.D. Student $\cdot$ Haptics \& Multimodal AI}\\[6pt]
+\href{mailto:namsyong0508@hanyang.ac.kr}{namsyong0508@hanyang.ac.kr} \quad|\quad
+\href{https://github.com/NamSeoYong}{github.com/NamSeoYong} \quad|\quad
+\href{https://namseoyong.github.io}{namseoyong.github.io} \quad|\quad
+Ansan, South Korea
+\vspace{4pt}
+
+% ---------------- Education ------------------------------------
+\section{Education}
+\cvevent{Hanyang University --- Ph.D. Student, Applied Artificial Intelligence}{2025 -- Present}{Advised by Prof.\ Yongjae Yoo (MILab)}{Seoul, Korea}
+\vspace{-2pt}\hspace{0.2em}{\color{muted}GPA 4.42 / 4.5}\par\vspace{4pt}
+\cvevent{Hanyang University --- B.S.\ in Computer Science}{2021 -- 2025}{Advised by Prof.\ Yongjae Yoo}{Ansan, Korea}
+\vspace{-2pt}\hspace{0.2em}{\color{muted}GPA 3.72 / 4.5}
+
+% ---------------- Research Interests --------------------------
+\section{Research Interests}
+Haptics and multimodal interaction; automatic 4D / multisensory effect generation and rendering;
+multimedia AI and computer vision; accessibility; robot AI (vision--language--action and video world models).
+
+% ---------------- Research Experience -------------------------
+\section{Research Experience}
+\cvevent{Ph.D.\ Research Student --- Multimodal Intelligence and Interaction Lab (MILab)}{2025 -- Present}{Hanyang University}{Ansan, Korea}
+\begin{itemize}
+  \item Automatic multimodal 4D effect generation and haptic rendering for immersive media.
+  \item Direct haptic rendering of Gaussian Splatting scenes; VLA and video world models for robot manipulation.
+\end{itemize}
+\vspace{2pt}
+\cvevent{Undergraduate Research Intern --- MILab}{2023 -- 2025}{Hanyang University}{Ansan, Korea}
+\begin{itemize}
+  \item Audiovisual-to-tactile translation and automatic 4D effect authoring.
+\end{itemize}
+
+% ---------------- Teaching ------------------------------------
+\section{Teaching Experience}
+\textbf{Teaching Assistant, Hanyang University}\par\vspace{2pt}
+\begin{itemize}
+  \item \textbf{2025 Spring} --- Linear Algebra (MAT2003); Speech Recognition (DAI3005)
+  \item \textbf{2025 Fall} --- Numerical Analysis (MAT3008); Probability \& Stochastic Processes (ELE3037)
+  \item \textbf{2026 Spring} --- Tensor Programming (DAI2001); Computer Architecture (ENE1004); Speech Recognition (DAI3005)
+\end{itemize}
+
+% ---------------- Publications --------------------------------
+\section{Publications}
+\textit{\color{muted}\underline{Underlined} name indicates first authorship.}\par\vspace{4pt}
+
+\textbf{International}
+\begin{enumerate}[leftmargin=1.5em, itemsep=3pt, topsep=3pt]
+  \item \underline{\me}, Jung, H., Yoo, Y. ``HAPhy: AI-Assisted Content Creator Supporting Tools for Multi-sensory Haptic Experiences in Immersive Media.'' \textit{ACM Multimedia Systems Conference (MMSys)}, 2026.
+  \item Chung, M., \me, Park, J., Yoo, Y. ``TaME4D: Tailoring Multisensory Effects for Improving 4D Movie Watching Experiences.'' \textit{ACM International Conference on Multimedia (ACM MM)}, 2026.
+  \item \underline{\me}, Yoo, Y. ``Evaluating Perceptual Characteristics of Impact Haptic Stimuli.'' \textit{Extended Abstracts, IEEE World Haptics Conference (WHC)}, 2025.
+  \item Jung, H., \me, Yoo, Y. ``Generative AI-Based Multimodal Authoring Tool for Virtual Objects.'' \textit{Demonstration, IEEE World Haptics Conference (WHC)}, 2025.
+  \item \underline{\me}, Chung, M., Kim, H., Kim, E., Kim, T., Yoo, Y. ``Automatic Generation of Multimodal 4D Effects for Immersive Video Watching Experiences.'' \textit{SIGGRAPH Asia Technical Communications}, 2024. (Oral)
+\end{enumerate}
+
+\textbf{Domestic (Korea)}
+\begin{enumerate}[leftmargin=1.5em, itemsep=3pt, topsep=3pt]
+  \item \underline{\me}, Yoo, Y. ``A Preliminary Study Toward Direct Haptic Rendering of Gaussian Splatting Scenes: Deformable Object Rendering and Passivity Instrumentation on a Rendered Point Cloud.'' \textit{Korea Haptics Conference}, 2026. (Poster)
+  \item \underline{\me}, Yoo, Y. ``Direct Haptic Rendering of Gaussian Splatting Scenes: A Demonstration of Deformable Object Rendering on a Rendered Point Cloud.'' \textit{Korea Haptics Conference}, 2026. (Demo)
+  \item Kim, E., Park, J., Kim, S., \me, Yoo, Y. ``Real-time AI-based Audio--Tactile Chart Accessibility System for the Visually Impaired.'' \textit{HCI Korea}, 2026.
+  \item \underline{\me}, Park, J., Chung, M., Yoo, Y. ``Audiovisual Feature Extraction for Multimodal Haptic Rendering in 4D Films Based on User Preferences.'' \textit{Korea Computer Congress (KCC)}, 2025.
+  \item Chung, M., \me, Yoo, Y. ``Design of a Four-Directional Wind Feedback System Using Video-based Object Tracking.'' \textit{Korea Computer Congress (KCC)}, 2025.
+  \item Chung, M., \me, Yoo, Y. ``Automatic Authoring of Temperature Feedback in 4D Films Using Retrieval-Augmented Generation.'' \textit{HCI Korea}, 2025.
+  \item \underline{\me}, Kim, T., Chung, M., Yoo, Y. ``Adaptive Threshold-Based Event Detection and Visual Effect Extraction for Automatic 4D Effect Authoring.'' \textit{Korea Computer Congress (KCC)}, 2024.
+  \item Kim, T., Jung, J., \me, Yoo, Y. ``Speech-Gesture Recognition Model for Intuitive Control of Rail Robots.'' \textit{Korea Robotics Society Annual Conference (KRoC)}, 2024. (Poster)
+  \item \underline{\me}, Chung, M., Kim, T., Yoo, Y. ``Automated Generation of Multimodal 4D Effects in Home Theater Environments.'' \textit{Korea Haptics Conference}, 2023. (Demo)
+\end{enumerate}
+
+% ---------------- Honors & Awards -----------------------------
+\section{Honors \& Awards}
+\begin{itemize}
+  \item \textbf{2025} \quad Student Innovation Challenge (Mixed Reality), Finalist --- IEEE World Haptics 2025
+  \item \textbf{2025} \quad Best Work-in-Progress Paper Award, Finalist --- World Haptics 2025
+  \item \textbf{2025} \quad Kakao $\times$ KIISE AI Agent Competition
+  \item \textbf{2024} \quad Grand Prize, SW/ICT/AI Conference --- Hanyang University ERICA
+  \item \textbf{2024} \quad Student Idea Competition (Future AI Mobility), Finalist --- Korean Haptics Society
+  \item \textbf{2023} \quad Grand Prize, Future Mobility Haptic Technology Idea Competition --- Hyundai Motor \& Korean Haptics Society
+  \item \textbf{2023--2024} \quad College of Computing Leadership Scholarship --- Hanyang University ERICA
+\end{itemize}
+
+% ---------------- Skills --------------------------------------
+\section{Skills}
+\textbf{Programming:} Python, PyTorch \\
+\textbf{Areas:} Haptics, Multimodal Interaction, Computer Vision, Multimedia AI, Robot AI \\
+\textbf{Languages:} Korean (native), English (professional working proficiency)
+
+\end{document}

@@ -27,7 +27,7 @@ nav_order: 6
     </tr>
     <tr>
       <td><strong>2026 Spring</strong></td>
-      <td>Tensor Programming (DAI2001) · Computer Architecture (ENE1004)</td>
+      <td>Tensor Programming (DAI2001) · Computer Architecture (ENE1004) · Speech Recognition (DAI3005)</td>
     </tr>
   </tbody>
 </table>
