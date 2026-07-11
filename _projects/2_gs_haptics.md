@@ -2,6 +2,7 @@
 layout: page
 title: Direct Haptic Rendering of Gaussian Splatting Scenes
 description: Touching and deforming photorealistic 3D scenes without mesh reconstruction.
+img: assets/img/proj_gs.png
 importance: 2
 category: Haptics & Multimodal
 ---

@@ -2,6 +2,7 @@
 layout: page
 title: Automatic Multimodal 4D Effect Generation
 description: Turning ordinary videos into synchronized vibrotactile, thermal, and airflow experiences.
+img: assets/img/proj_4d.jpg
 importance: 1
 category: Haptics & Multimodal
 ---
