@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+description: Selected research and development projects across haptics, robot AI, and accessibility.
+nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Haptics & Multimodal, Robot AI, Accessibility]
 horizontal: false
 ---
 
